@@ -51,7 +51,7 @@ service('GWFLocationPicker', function($q, $mdDialog, GWFMapUtil) {
 		}
 		
 		$mdDialog.show({
-			templateUrl: 'modules/Maps/js/tpl/gwf-location-picker.html',
+			templateUrl: 'module/Maps/js/tpl/gwf-location-picker.html',
 			locals: {
 				initPosition: initPosition,
 				text: text,

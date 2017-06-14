@@ -1,6 +1,8 @@
 <?php
 final class Module_Maps extends GWF_Module
 {
+	public $module_priority = 45;
+	
 	public function onLoadLanguage() { return $this->loadLanguage('lang/maps'); }
 	
 	public function getConfig()

@@ -10,7 +10,7 @@
 		
 		<md-input-container>
 			<label>Fixture: </label>
-			<md-checkbox ng-model="data.fix" ng-change="toggleFixture()"></md-input>
+			<md-checkbox aria-label="Toggle fix coordinates" ng-model="data.fix" ng-change="toggleFixture()"></md-input>
 		</md-input-container>
 
 		<section layout="row" flex>
