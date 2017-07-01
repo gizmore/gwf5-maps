@@ -1,9 +1,19 @@
 <?php
+/**
+ * Maps API helper.
+ * 
+ * @see GDO_Postion - A geolocation GDOType.
+ * @author gizmore
+ * @since 4.0
+ * @version 5.0
+ */
 final class Module_Maps extends GWF_Module
 {
 	public $module_priority = 45;
 	
 	public function onLoadLanguage() { return $this->loadLanguage('lang/maps'); }
+	
+	public function getClasses() { return ['GWF_Position', 'GDO_Position']; }
 	
 	public function getConfig()
 	{
@@ -18,10 +28,11 @@ final class Module_Maps extends GWF_Module
 	public function onIncludeScripts()
 	{
 		GWF_Javascript::addJavascript($this->googleMapsScriptURL());
-		$this->addJavascript('js/gwf-map-util.js');
-		$this->addJavascript('js/gwf-location-picker.js');
-		$this->addJavascript('js/gwf-position-srvc.js');
 		$this->addJavascript('js/gwf-location-bar-ctrl.js');
+		$this->addJavascript('js/gwf-location-picker.js');
+		$this->addJavascript('js/gwf-map-util.js');
+		$this->addJavascript('js/gwf-position-ctrl.js');
+		$this->addJavascript('js/gwf-position-srvc.js');
 		$this->addCSS('css/gwf-maps.css');
 	}
 	

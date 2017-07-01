@@ -18,7 +18,7 @@ controller('GWFLocationBarCtrl', function($scope, GWFPositionSrvc, GWFLocationPi
 	};
 	
 	$scope.locationPicked = function(latlng) {
-		console.log('LocationBarCtrl.onPick()');
+		console.log('LocationBarCtrl.locationPicked()');
 		GWFPositionSrvc.startPatching(latlng.lat(), latlng.lng());
 		$scope.data.fix = true;
 		$scope.data.fixLat = latlng.lat();
