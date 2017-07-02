@@ -18,8 +18,8 @@ final class GWF_Position
 	##############
 	### Static ###
 	##############
-// 	public static function isValidLat($lat) { return is_numeric($lat) && $lat >= -90 && $lat <= 90; }
-// 	public static function isValidLng($lng) { return is_numeric($lng) && $lng >= -180 && $lng <= 180; }
+	public static function isValidLat($lat) { return is_numeric($lat) && $lat >= -90 && $lat <= 90; }
+	public static function isValidLng($lng) { return is_numeric($lng) && $lng >= -180 && $lng <= 180; }
 	
 	/**
 	 * http://assemblysys.com/geographical-distance-calculation-in-php/

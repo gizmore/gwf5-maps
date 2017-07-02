@@ -27,8 +27,12 @@ controller('GWFPositionCtrl', function($scope, GWFPositionSrvc, GWFLocationPicke
 		console.log('GWFPositionCtrl.setLatLng()', lat, lng);
 		$scope.data.lat = lat;
 		$scope.data.lng = lng;
-		$scope.data.display = lat + '°;' + lng + '°;';
-		setTimeout($scope.$apply.bind($scope), 1);
+		if (lat === null) {
+			$scope.data.display = '---';
+		} else {
+			$scope.data.display = lat + '°;' + lng + '°;';
+		}
+		setTimeout($scope.$apply.bind($scope), 0);
 	};
 	
 	
