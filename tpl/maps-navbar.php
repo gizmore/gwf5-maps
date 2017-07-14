@@ -1,3 +1,4 @@
+<div>
 <md-toolbar class="md-theme-indigo" layout-align="right">
 <h1 class="md-toolbar-tools"><?php l('title_position'); ?></h1>
 	<md-content layout-margin ng-controller="GWFLocationBarCtrl" class="gwf-location-bar">
@@ -19,3 +20,4 @@
 		</section>
 	</md-content>
 </md-toolbar>
+</div>
