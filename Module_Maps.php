@@ -18,7 +18,7 @@ final class Module_Maps extends GWF_Module
 	public function getConfig()
 	{
 		return array(
-			GDO_String::make('maps_api_key')->ascii()->max(64)->initial('AIzaSyBrEK28--B1PaUlvpHXB-4MzQlUjNPBez0'),
+			GDO_Secret::make('maps_api_key')->max(64)->initial('AIzaSyBrEK28--B1PaUlvpHXB-4MzQlUjNPBez0'),
 			GDO_Checkbox::make('maps_sensors')->initial('1'),
 		);
 	}
