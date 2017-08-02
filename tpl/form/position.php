@@ -4,7 +4,7 @@
  flex ng-controller="GWFPositionCtrl"
  ng-init='init(<?php echo json_encode($field->initJSON()); ?>)'>
   <label for="form[<?php echo $field->name; ?>]"><?php echo $field->displayLabel(); ?></label>
-  <?php echo GDO_Icon::iconS('position'); ?>
+  <?= GDO_Icon::iconS('gps_fixed'); ?>
   <input
    ng-click="onPick()"
    type="text"
